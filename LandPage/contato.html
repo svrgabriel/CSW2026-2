@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact - gabriel savergnini</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+</head>
+<body>
+    <!-- LETREIRO TERMINAL -->
+    <marquee scrollamount="6">
+        waiting for user input... opening secure channel... ready to transmit data.
+    </marquee>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">home</a>
+            <a href="curriculo.html">about</a>
+            <a href="github.html">github</a>
+            <a href="servicos.html">prices 'n' services</a>
+            <a href="contato.html">contact</a>
+        </nav>
+
+        <h1>contact me</h1>
+        
+        <form action="#" method="POST">
+            <label>full name:</label>
+            <input type="text" name="nome" placeholder="digite seu nome..." required>
+
+            <label>phone / whatsapp:</label>
+            <input type="tel" name="telefone" placeholder="(xx) 9xxxx-xxxx">
+
+            <label>e-mail:</label>
+            <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+            <label>você é:</label><br><br>
+            <input type="radio" name="tipo_pessoa" value="fisica" checked> pessoa física
+            <input type="radio" name="tipo_pessoa" value="juridica"> pessoa jurídica (empresa)
+            <br><br>
+
+            <label>best time to talk:</label>
+            <select name="horario">
+                <option value="manha">manhã (08h - 12h)</option>
+                <option value="tarde">tarde (13h - 18h)</option>
+                <option value="noite">noite (19h - 22h)</option>
+            </select>
+
+            <label>service required:</label><br><br>
+            <input type="checkbox" name="servico" value="site_simples"> site estático simples<br>
+            <input type="checkbox" name="servico" value="site_dinamico"> site dinâmico com banco de dados<br>
+            <input type="checkbox" name="servico" value="sistema"> sistema avançado / vps<br><br>
+
+            <label>project details:</label>
+            <textarea name="descricao" rows="5" placeholder="me conte sobre o seu projeto..."></textarea>
+
+            <!-- BOTÃO PISCANDO -->
+            <button type="submit" class="blink">[ submit_data ]</button>
+        </form>
+    </div>
+</body>
+</html>
